@@ -29,33 +29,10 @@
 		1AE5BF582DE47D8D0011DFDC /* InspoQuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspoQuotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1AE5BF602DE47D8D0011DFDC /* Exceptions for "InspoQuotes" folder in "InspoQuotes" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 1AE5BF372DE47D8C0011DFDC /* InspoQuotes */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1AE5BF3A2DE47D8C0011DFDC /* InspoQuotes */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				1AE5BF602DE47D8D0011DFDC /* Exceptions for "InspoQuotes" folder in "InspoQuotes" target */,
-			);
 			path = InspoQuotes;
-			sourceTree = "<group>";
-		};
-		1AE5BF512DE47D8D0011DFDC /* InspoQuotesTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InspoQuotesTests;
-			sourceTree = "<group>";
-		};
-		1AE5BF5B2DE47D8D0011DFDC /* InspoQuotesUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InspoQuotesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -89,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				1AE5BF3A2DE47D8C0011DFDC /* InspoQuotes */,
-				1AE5BF512DE47D8D0011DFDC /* InspoQuotesTests */,
-				1AE5BF5B2DE47D8D0011DFDC /* InspoQuotesUITests */,
 				1AE5BF392DE47D8C0011DFDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +118,6 @@
 			dependencies = (
 				1AE5BF502DE47D8D0011DFDC /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				1AE5BF512DE47D8D0011DFDC /* InspoQuotesTests */,
-			);
 			name = InspoQuotesTests;
 			packageProductDependencies = (
 			);
@@ -166,9 +138,6 @@
 			dependencies = (
 				1AE5BF5A2DE47D8D0011DFDC /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				1AE5BF5B2DE47D8D0011DFDC /* InspoQuotesUITests */,
-			);
 			name = InspoQuotesUITests;
 			packageProductDependencies = (
 			);
@@ -188,6 +157,7 @@
 				TargetAttributes = {
 					1AE5BF372DE47D8C0011DFDC = {
 						CreatedOnToolsVersion = 16.3;
+						LastSwiftMigration = 1630;
 					};
 					1AE5BF4D2DE47D8D0011DFDC = {
 						CreatedOnToolsVersion = 16.3;
@@ -287,6 +257,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,6 +275,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.simli.InspoQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "InspoQuotes/InspoQuotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -331,6 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.simli.InspoQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "InspoQuotes/InspoQuotes-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
